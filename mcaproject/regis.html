@@ -1,0 +1,60 @@
+<? php
+$nm=$_GET['nm'];
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title> Registration </title>
+	<link rel="stylesheet" href="regis.css">
+</head>
+  
+<body>
+		<div class="container">
+		<div class="navbar">
+			<img src="Banasthali_Vidyapeeth_Logo.png" class="logo">
+			<nav>
+				<ul>
+					<li><a href="homepage.html">HOME</a></li>
+					<li><a href="todayevent.php">TODAY'S EVENT</a></li>
+					<li><a href="upcomingevent.php">UPCOMING EVENT</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contactus.html">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</div>
+
+    <div class="wrapper">
+	<div class="wrapper">  
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="form">
+    <h1>Registration</h1>
+	<div class="form">
+		<form action="regisinsert.php" method="post" class="regis">
+                <input type="text"  name="name" required placeholder="Name of Event" value="<?php echo "$nm" ?>">
+				
+
+                <input type="text" name="studentname" id="studentname" placeholder="Student Name">
+	
+			
+                <input type="text" name="sid" id="sid" placeholder="Student Id">
+					
+			
+                <input type="number" name="rno" id="rno" placeholder="Roll NO.">
+				
+		
+                <input type="text" name="class" id="class" placeholder="Class">
+				<br><br>
+				
+            <button type="submit">Register</button>
+        </form>
+		</div>
+		</div>
+		
+    </div>
+</div>
+</body>
+</html>

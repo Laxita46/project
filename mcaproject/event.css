@@ -1,0 +1,104 @@
+.container {
+  border-radius: 5px;
+  <!background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url("up3.jpg");
+		background-position: center;
+		background-size: cover;
+}
+
+
+.navbar{
+	width: 100%;
+	height: 15vh;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	background-color:#1f3d7a;
+}
+
+.logo{
+	width: 100px;
+}
+
+nav{
+	flex: 1;
+	padding-left: 60px;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color: #b3e0ff;
+	font-size: 20;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side: top;
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size:25px;
+}
+
+tr th{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid black;
+}
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+form{
+	margin-top:5%;
+	margin-left:60%;
+}
+
+input[type=text] {
+	height:30px;
+	border:2px solid blue;
+	border-radius:4px;
+	 background-color: white;
+  padding-left: 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#7B68EE; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=submit]:hover{
+	background-color:#48D1CC;
+	
+}

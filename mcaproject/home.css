@@ -1,0 +1,153 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+
+
+.header{
+	background:	#193366;
+	overflow:hidden;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+  overflow:hidden;
+  font-size: 4em;
+  color:#ccebff;
+}
+
+
+
+.container{
+		width: 100%;
+		height: 100vh;
+		background-image:url(background.png);
+		background-position: center;
+		background-size: cover;
+		padding-left: 5%;
+		padding-right: 5%;
+		box-sizing: border-box;
+		position: relative;
+		overflow:hidden;
+		
+}		
+
+.navbar{
+	width: 100%;
+	height: 15vh;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	background-color:#1f3d7a;
+}
+
+.logo{
+	width: 100px;
+	cursor: pointer;
+	animation: movedown 1s linear 1;
+	animation-delay: 1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+	0%{
+		transform: translateY(-100px);
+		visibilty: visible;
+	}
+	100%{
+		transform:translateY(0);
+		visibility: visible;
+	}
+}
+
+nav{
+	flex: 1;
+	padding-left: 60px;
+	animation: movedown 1s linear 1;
+	animation-delay: 0.5s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color: #b3e0ff;
+	font-size: 25;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row{
+	position:absolute;
+	right:40px;
+	display: flex;
+	height: 88%;
+	align-items: center;
+	animation: moveright 1s linear 1;
+	animation-delay: 1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveright{
+	0%{
+		transform: translateX(-100px);
+		visibilty: visible;
+	}
+	100%{
+		transform:translateX(0);
+		visibility: visible;
+	}
+}
+.col{
+	flex-basis: 50px;
+	margin-left: -30%;
+	margin-bottom: 50%;
+}
+
+h1{
+	color: black;
+	font-size: 100px;
+	
+}
+p{
+
+	color: purple;
+	font-size: 30px;
+	line-height: 25px;
+}
+
+button{
+	display: inline-block;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+	margin-top: 30px;
+}
+
+
+
